@@ -36,7 +36,12 @@
     "rules": {
       "vue/no-shared-component-data": "off",
       "vue/no-textarea-mustache": "off",
-      "vue/max-attributes-per-line": "off"
+      "vue/max-attributes-per-line": "off",
+      "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always"
+      }]
     }
   },
   "browserslist": [

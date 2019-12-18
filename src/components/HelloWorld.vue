@@ -2,15 +2,25 @@
   <div class="hello">
     <h1>TEST</h1>
     <p>{{ msg }}</p>
+    <Test />
   </div>
 </template>
 
 <script>
+import Test from './Test'
 export default {
   name: 'HelloWorld',
+  components: {
+    Test
+  },
   data () {
     return {
       msg: 'Lorem ipsum'
+    }
+  }, 
+  computed: {
+    isDefault () {
+      return true
     }
   }
 }
