@@ -1,12 +1,18 @@
 <template>
   <div class="hello">
     <h1>TEST</h1>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld'
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Lorem ipsum'
+    }
+  }
 }
 </script>
 

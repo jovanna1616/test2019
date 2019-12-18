@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "husky": "^4.0.0-beta.5",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -26,12 +27,16 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "eslint:recommended"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-shared-component-data": "off",
+      "vue/no-textarea-mustache": "off",
+      "vue/max-attributes-per-line": "off"
     }
   },
   "browserslist": [
